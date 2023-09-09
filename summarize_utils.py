@@ -4,7 +4,7 @@ from heapq import nlargest
 from nltk import sent_tokenize
 
 
-def split_data(texts):
+def _split_data(texts):
     if isinstance(texts, str):
         sentences = sent_tokenize(texts)
     else:
@@ -14,7 +14,7 @@ def split_data(texts):
 
 
 def generate_summary(texts):
-    sentences = split_data(texts)
+    sentences = _split_data(texts)
     if len(sentences) < 2:
         return sentences
 
@@ -28,7 +28,7 @@ def generate_summary(texts):
     return summary_tfidf
 
 
-def summarize_data(data, column, summarize_column):
-    data[summarize_column] = data[column].apply(lambda x: generate_summary(x))
+def summarize_data(data, column, summary_column):
+    data[summary_column] = data[column].apply(lambda x: generate_summary(x))
 
     return data
