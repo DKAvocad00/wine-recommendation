@@ -32,7 +32,7 @@ if __name__ == '__main__':
     print("Summarized description: {}".format(summary))
 
     print(f" [INFO] Loading Doc2Vec model...")
-    model = Doc2Vec.load('model/doc2vec_model')
+    model = Doc2Vec.load('../../model/doc2vec_model')
 
     print(f" [INFO] Loading data...")
     data = read_file(FINAL_DATA_FILE_PATH)

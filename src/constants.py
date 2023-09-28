@@ -1,7 +1,7 @@
 # file constants
-DATA_FILE_PATH = 'data/wine_reviews.csv'
-FINAL_DATA_FILE_PATH = 'data/wine_reviews_final.csv'
-DOC2VEC_MODEL_FILE_PATH = 'model/doc2vec_model'
+DATA_FILE_PATH = '../../data/wine_reviews.csv'
+FINAL_DATA_FILE_PATH = '../../data/wine_reviews_final.csv'
+DOC2VEC_MODEL_FILE_PATH = '../../model/doc2vec_model'
 
 # model constants
 VECTOR_SIZE = 100

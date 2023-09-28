@@ -14,7 +14,3 @@ def read_file(file_path):
 
     return df
 
-
-def read_vectorize_file(filepath):
-    reviews = read_file(filepath)
-    reviews['description_vectorized'] = reviews['description_vectorized'].apply(str_to_ndarray)
