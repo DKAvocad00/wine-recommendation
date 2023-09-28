@@ -83,9 +83,9 @@ if __name__ == '__main__':
                 callbacks=[ProgressCallback(total_epochs=NUM_EPOCHS)])
 
     print("[INFO] Saving data...")
-    reviews.to_csv('../../data/wine_reviews_final.csv', index=False)
+    reviews.to_csv(FINAL_DATA_FILE_PATH, index=False)
 
     print("[INFO] Saving model...")
-    model.save('../../model/doc2vec_model')
+    model.save(DOC2VEC_MODEL_FILE_PATH)
 
     print("[INFO] Model saved")

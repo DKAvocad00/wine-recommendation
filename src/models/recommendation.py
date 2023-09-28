@@ -2,7 +2,7 @@ if __name__ == '__main__':
     import argparse
     from gensim.models.doc2vec import Doc2Vec
     from src.utils.file_utils import read_file
-    from src.constants import FINAL_DATA_FILE_PATH
+    from src.constants import FINAL_DATA_FILE_PATH, DOC2VEC_MODEL_FILE_PATH
     from src.utils.summarize_utils import generate_summary
     from src.utils.preprocess_utils import preprocess_text
     from src.utils.utils import get_similar_wines
@@ -32,7 +32,7 @@ if __name__ == '__main__':
     print("Summarized description: {}".format(summary))
 
     print(f" [INFO] Loading Doc2Vec model...")
-    model = Doc2Vec.load('../../model/doc2vec_model')
+    model = Doc2Vec.load(DOC2VEC_MODEL_FILE_PATH)
 
     print(f" [INFO] Loading data...")
     data = read_file(FINAL_DATA_FILE_PATH)

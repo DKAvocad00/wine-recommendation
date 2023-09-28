@@ -1,7 +1,11 @@
+import os
+
 # file constants
-DATA_FILE_PATH = '../../data/wine_reviews.csv'
-FINAL_DATA_FILE_PATH = '../../data/wine_reviews_final.csv'
-DOC2VEC_MODEL_FILE_PATH = '../../model/doc2vec_model'
+BASE_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+DATA_FILE_PATH = os.path.join(BASE_PATH, 'data', 'wine_reviews.csv')
+FINAL_DATA_FILE_PATH = os.path.join(BASE_PATH, 'data', 'wine_reviews_final.csv')
+DOC2VEC_MODEL_FILE_PATH = os.path.join(BASE_PATH, 'model', 'doc2vec_model')
 
 # model constants
 VECTOR_SIZE = 100
