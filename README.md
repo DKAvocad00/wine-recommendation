@@ -17,21 +17,21 @@ Make sure you have Python installed. Additionally, you'll need to install the re
 
 To generate a summary from a wine description, you can run the following command:
 
-    python summarize.py --description "This dry and restrained wine offers spice in profusion. Balanced with acidity and a firm texture, it's very much for food."
+    python src/models/summarize.py --description "This dry and restrained wine offers spice in profusion. Balanced with acidity and a firm texture, it's very much for food."
 
 Alternatively, you can use the default settings by running:
 
-    python summarize.py
+    python src/models/summarize.py
 
 ## Finding Top 5 Similar Wines
 
 To discover the top 5 wines similar to your input description, use the following command:
 
-    python recommendation.py --description "This has great depth of flavor with its fresh apple and pear fruits and touch of spice. It's off dry while balanced with acidity and a crisp texture. Drink now."
+    python src/models/recommendation.py --description "This has great depth of flavor with its fresh apple and pear fruits and touch of spice. It's off dry while balanced with acidity and a crisp texture. Drink now."
 
 By default, the script will find similar wines using default settings:
 
-    python recommendation.py 
+    python src/models/recommendation.py 
 
 
 ## Option
