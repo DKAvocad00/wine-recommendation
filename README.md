@@ -12,8 +12,8 @@ Make sure you have Python installed. Additionally, you'll need to install the re
 
     pip install -r requirements.txt
 
-# Usage
-## Getting Summary of a Wine Description
+## Usage
+### Getting Summary of a Wine Description
 
 To generate a summary from a wine description, you can run the following command:
 
@@ -23,7 +23,7 @@ Alternatively, you can use the default settings by running:
 
     python src/models/summarize.py
 
-## Finding Top 5 Similar Wines
+### Finding Top 5 Similar Wines
 
 To discover the top 5 wines similar to your input description, use the following command:
 
